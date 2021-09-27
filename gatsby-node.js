@@ -11,6 +11,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       {
         allContentfulBlogPost {
           nodes {
+            id
             title
             slug
           }
@@ -42,6 +43,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       createPage({
         path: `/blog/${post.slug}/`,
         component: blogPost,
+        ownerNodeId: post.id,
         context: {
           slug: post.slug,
           previousPostSlug,
