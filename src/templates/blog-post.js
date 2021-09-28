@@ -18,13 +18,13 @@ class BlogPostTemplate extends React.Component {
       <Layout location={this.props.location}>
         <Seo
           title={post.title}
-          description={post.description.childMarkdownRemark.excerpt}
-          image={`http:${post.heroImage.resize.src}`}
+          description={post.description?.childMarkdownRemark?.excerpt}
+          image={`http:${post?.heroImage?.resize?.src}`}
         />
         <Hero
-          image={post.heroImage.gatsbyImageData}
-          title={post.title}
-          content={post.description.childMarkdownRemark.excerpt}
+          image={post?.heroImage?.gatsbyImageData}
+          title={post?.title}
+          content={post?.description?.childMarkdownRemark?.excerpt}
         />
         <div className={styles.container}>
           <span className={styles.meta}>
