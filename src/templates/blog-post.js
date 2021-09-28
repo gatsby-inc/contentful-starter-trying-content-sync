@@ -18,7 +18,7 @@ class BlogPostTemplate extends React.Component {
       <Layout location={this.props.location}>
         <Seo
           title={post.title}
-          description={post.description?.childMarkdownRemark?.excerpt}
+          description={post?.description?.childMarkdownRemark?.excerpt}
           image={`http:${post?.heroImage?.resize?.src}`}
         />
         <Hero
@@ -30,13 +30,13 @@ class BlogPostTemplate extends React.Component {
           <span className={styles.meta}>
             {post.author.name} &middot;{' '}
             <time dateTime={post.rawDate}>{post.publishDate}</time> –{' '}
-            {post.body.childMarkdownRemark.timeToRead} minute read
+            {post?.body?.childMarkdownRemark?.timeToRead} minute read
           </span>
           <div className={styles.article}>
             <div
               className={styles.body}
               dangerouslySetInnerHTML={{
-                __html: post.body.childMarkdownRemark.html,
+                __html: post?.body?.childMarkdownRemark?.html,
               }}
             />
             <Tags tags={post.tags} />
