@@ -22,7 +22,7 @@ const ArticlePreview = ({ posts }) => {
               </Link>
               <div
                 dangerouslySetInnerHTML={{
-                  __html: post.description.childMarkdownRemark.html,
+                  __html: post?.description?.childMarkdownRemark?.html,
                 }}
               />
               <div className={styles.meta}>
