@@ -1,5 +1,9 @@
 const path = require('path')
 
+exports.onPreInit = ({ reporter }) => {
+  reporter.panic(`testing failed builds in content sync UI`)
+}
+
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
 
