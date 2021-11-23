@@ -1,6 +1,7 @@
 const path = require('path')
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
+  console.log(`UPDATE1`)
   const { createPage } = actions
 
   // Define a template for blog post
