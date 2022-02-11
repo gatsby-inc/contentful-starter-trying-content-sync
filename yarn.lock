@@ -7618,10 +7618,10 @@ gatsby-worker@1.8.0-next.0:
     "@babel/core" "^7.15.5"
     "@babel/runtime" "^7.15.4"
 
-gatsby@4.8.0-alpha-node-manifest-dsg.12:
-  version "4.8.0-alpha-node-manifest-dsg.12"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-4.8.0-alpha-node-manifest-dsg.12.tgz#fa5b252bfdfb3ad123704c8cb82717dc5c865603"
-  integrity sha512-tUuyokCumbYotgWeM1YDy1LXnKVvVwBHgWPm/6oAZObTEeHnFCHVFUekCEbe9c1dx+3ow+KcvhHFpTMngoWL4Q==
+gatsby@4.8.0-alpha-node-manifest-dsg.13:
+  version "4.8.0-alpha-node-manifest-dsg.13"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-4.8.0-alpha-node-manifest-dsg.13.tgz#c8981a69df361e689b4e1d198b9890e5b91c7a31"
+  integrity sha512-8nUz6Y4xThRj33AD77IGN0+V5M56IG+ev/IMHc0LHmNZcu3yx+EeCVJ4DFFtQKMzxjqubNfk4HD8BiCryFF4kQ==
   dependencies:
     "@babel/code-frame" "^7.14.0"
     "@babel/core" "^7.15.5"
